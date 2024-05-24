@@ -1,0 +1,625 @@
+  
+<!DOCTYPE html>
+<html>                              
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        scroll-behavior:smooth;
+        background-color: #191919;
+ 
+    }
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    
+    .tite{
+        font-size: 50px;
+        text-indent: 10px;
+        font-weight: normal;
+        text-shadow: #173459 1px 0 10px;
+        font-style: oblique;
+        flex-wrap: wrap-reverse;
+        margin-left: 30px;
+    }
+    header:first-letter{
+        color:#f9532d;
+        font-size: 50px;
+    }
+    .tite:hover{
+        color: #f9532d;
+    }
+    header{
+        position: fixed;
+       
+       padding-bottom: px;
+        z-index: 1;
+    }
+    .ulo{
+        background-color: #191919;
+        box-shadow:1px 1px 20px whitesmoke;
+        top: -10px;
+    }
+    .navi{
+        float:right;
+        word-spacing: 10px;
+        text-decoration: none;
+        font-size: 20px;
+        margin-left: 749px;
+        margin-top: 20px;
+        margin-right: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       
+    }
+    .navi a:hover{
+        color: #f9532d;
+        transform: translate(-1px);
+        filter: drop-shadow(1px 1px 10px  #f9532d);
+    }
+    .art{
+        margin-top: 28%;
+        margin-left: 20px;
+        margin-bottom: 20%;
+    }
+    .art h1, .face{
+        animation: slideright 2.5s ease forwards;
+    }
+    .jer{
+       animation: slidebottom 3s ease forwards;
+    }
+    .des{
+       animation: slideleft 1s ease forwards;
+    }
+    .ris{
+        animation: slidetop 1s ease forwards;
+    }
+
+    @keyframes slideright{
+        0%{
+            transform: rotate(10deg);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideleft{
+        0%{
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+        100%{
+            transform:translateY(0px);
+            opacity: 1;
+            }
+    }
+
+    @keyframes slidebottom{
+        0%{
+            transform: translateY(500px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slidetop{
+        0%{
+            transform: translateY(-100px);
+            opacity: 1;
+        }
+        100%{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+    
+     .me{
+       
+        bottom:50px;
+        animation: slideright 5s ease forwards;
+        margin-top:10px;
+    }   
+    .me a{
+       display:inline-block;
+       width:35px;
+       text-indent:50px;
+       height:35px;
+       border-radius: 50%;
+       margin: 10px;
+       text-align: center;
+       line-height: 35px;
+       border:1px solid #fff;
+       outline: 2px solid #f9532d;
+       transition:.3s;
+       background: transparent; 
+       margin-bottom: -30px;
+       color: aqua;
+     
+    }
+    .me a:hover{
+       transform:translateY(-5px);
+       color:white;
+       background: #f9532d;
+       box-shadow: 1px 1px 10px 10px #f9532d;
+    }
+    .me a i{
+       color:#fff;
+       margin-left: -100px;
+       font-size: 25px;
+       margin-top: 5px;
+   }
+
+     .des{
+        font-size: 70px;
+     }
+     .jer{
+        font-size: larger;
+     }
+     .ris{
+        font-family:Georgia, 'Times New Roman', Times, serif ;
+     }
+     .tularan img:hover{
+        transform: scale(2.0);
+        transition: 1.2s;
+        border-radius: 50%;
+        transition-duration: 1s;
+        filter: drop-shadow(10px 20px 10px whitesmoke)
+     }
+     .tularan img{
+        float: right;
+       max-width: 500px;
+        max-height:400px;
+        margin-top: -400px;
+        margin-right: 50px;
+        z-index: 0;
+        border-radius: 15px;
+        filter: drop-shadow(5px 9px 5px whitesmoke)
+     }
+     .about-title{
+        color: whitesmoke;
+        font-size:75px;
+        width:1130px;
+        text-align: center;
+        float: right;
+        margin-top:-550px;
+        text-indent: 220px;
+     }
+     .father-pict{
+       max-width:600px ;
+        max-height:600px;
+        margin-top: 10px;
+        margin-left: -70px;
+        border-radius: 16px;
+     }
+     .father-pict:hover{
+       transition-duration: 1s;
+        filter: drop-shadow(10px 9px 10px whitesmoke)
+     }
+     .letter{
+        text-align: center;
+        margin-top: -30%;
+        margin-left: 40%;
+        width: 50%;
+        font-size: 30px;
+        color: whitesmoke;
+     }
+     .about-parent{
+        margin-bottom: 20%;
+        padding-bottom: 10%;
+     }
+   
+    .service-parent{
+       margin-bottom: 20%;
+        width:100%;
+        padding:100px 0px;
+    }
+    .service-title h2{
+        color: whitesmoke;
+        font-size:75px;
+        width:1130px;
+        text-align: center;
+        margin-top: -30px;
+        margin-bottom: 20px;
+        text-indent: 90px;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height:400px;
+       
+       
+    }
+    .card{
+        height: 350px;
+        width: 335px;
+        padding:20px 35px;
+        background:#191919;
+        border-radius:20px;
+        margin:15px;
+        position: relative;
+        overflow:hidden;
+        text-align: center;
+        filter: drop-shadow(10px 7px 10px black);
+    }
+    .card i{
+        font-size: 50px;
+        display: block;
+        text-align: center;
+        margin:25px 0px;
+        color:#f9532d;
+
+    }
+    h5{
+        color:whitesmoke;
+        font-size: 23px;
+        margin-bottom:15px;
+    }
+    .web p{
+        color:#f9532d;
+        font-size: 16px;
+        line-height: 27px;
+        margin-bottom:25px;
+        
+    }
+    .card .button{
+        color: black;
+       text-decoration: none;
+       padding: 9px 22px;
+       background:whitesmoke ;
+       border-radius: 30px;
+       border: 2px solid #f9532d;
+       font-weight: 500;
+       transition: .3s;
+       
+    }
+    .card .button:hover{
+        color:#f9532d;
+        background:transparent;
+        cursor: none;
+    }
+    .contact-parent{ 
+           margin-bottom: 10px;
+    }
+    .miss{
+        float: right;
+        font-weight: bolder;
+        font-size: 40px;
+        margin-top: -100%;
+        color:whitesmoke;
+    }
+    .car-pict{
+        border-radius: 16px 16px 0 0;
+        width:300px;
+        height:500px;
+        margin-left: 5%;
+    }
+    .car-pict:hover{
+        transition-duration: 1s;
+        filter: drop-shadow(10px 9px 10px whitesmoke)
+    }
+    .last{
+        background-color: #333;
+        padding: 20px 0;
+        margin-top: -90px;
+        flex-direction: column;
+        position: relative;
+        padding-left:20px ;
+        padding-right: 20px;
+        margin-right: 71.2%;
+        margin-left: 5%;
+        border-radius: 0 0 16px 16px;
+        color: whitesmoke;
+
+    }
+    .contact-content2{
+       float: right;
+        margin-top: -509px;
+        margin-right: 50px;
+        caret-color: #f9532d;
+        background: url(car.png) no-repeat;
+        width: 700px;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba (0,0,0,0.5);
+        overflow: hidden;
+        
+    }
+    
+    .form{
+        background: #FF37353F;
+        box-sizing: border-box;
+        width: 30px;
+        padding: 400px 150px;
+        text-indent: -70px;
+      
+    }
+    .contact-content3{
+        text-align: center;
+       
+        text-indent: 55px;
+        margin-top: -450px;
+    }   
+    .contact-content3 h2{
+     padding-bottom: 10px;
+     color: whitesmoke;
+    }
+    .contact-content3 p{
+        padding: 10px;
+        font-size: 20px;
+    }
+    .contact-content3 input{
+        margin-left: 50px;
+        padding: 20px;
+        color: whitesmoke;
+        font-weight: bolder;
+        background-color:transparent;
+        caret-color: #f9532d;
+        border:none;
+        padding-bottom: 30px;
+       outline: #f9532d;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+    .contact-content3 button{
+        width: 150px;
+        margin-left: 50px;
+        border: none;
+        color: whitesmoke;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 10px;
+        background: transparent;
+        border-radius: 10px;
+        border:1px solid #fff;
+       outline: 2px solid #f9532d;
+    }
+    .contact-content3 button:hover{
+        border-radius: 30px;
+        transform: translateY(-5px);
+        transition: 1s;
+        color: #333;
+        cursor: grab;
+    }
+    .oldtest a{
+       display:inline-flex;
+       width:40px;
+       height:40px;
+       border-radius: 30%;
+       align-items:  center;
+       line-height: 35px;
+       border:1px solid #fff;
+       outline: 2px solid #f9532d;
+       transition:.3s;
+       background: transparent; 
+       margin: 10px;
+    }
+    .oldtest a:hover{
+       transform:translateY(-5px);
+       color:white;
+       background: #f9532d;
+       box-shadow: 1px 1px 10px 10px #f9532d;
+    }
+    .mess{
+        color: whitesmoke;
+       
+    }
+    .oldtest i{
+        margin-left:-45px  ;
+        font-size: 20px;
+
+    }
+    .sub:hover{
+        transform:translateY(-5px);
+       color:whitesmoke;
+       background: #f9532d;
+       font-weight: bolder  ;
+    }
+    .icone{
+        font-size: 50px;
+    }
+    .end{
+        font-size: 50px;
+       text-indent: 420px;
+       margin-top: -400px;
+       color: whitesmoke;
+       text-shadow: #f9532d 10px 10px 10px;
+       animation: 1s infinite anim-end;
+    }
+    .yes{
+        display:inline-block;
+       width:35px;
+       text-indent:0px;
+       height:35px;
+       border-radius: 10px;
+       margin: 10px;
+       text-align: center;
+       line-height: 35px;
+       border:1px solid #fff;
+       outline: 2px solid #f9532d;
+       transition:.3s;
+       background: transparent; 
+       margin-bottom: -30px;
+       font-size: 20px;
+
+    }
+    .yes:hover{
+       transform:translateY(-5px);
+       color:whitesmoke;
+       background: #f9532d;
+       box-shadow: 1px 1px 10px 10px #f9532d;
+    }
+    .for{
+        margin-top: 20px;
+    }
+    .gmail{
+        text-decoration: underline;
+    }
+</style>
+<body>
+<header class="ulo" >
+    <div id="Homes">
+    <a href="#" class="tite">Raufffaaa</a>
+    <nav class="navi">
+        <b>
+        <a href="#home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Service">Services</a>
+        <a href="#Contact">Contact</a>
+        </b>
+    </nav>
+</div>
+</header>
+<div class="miss"  id="home">
+    <p>.</p>
+</div>
+<section class="art">
+   
+    <h1>Hello, It's me</h1>
+    <div class="des">John Rauf <span style="color:#f9532d;">Ali</span> </div>
+    <p class="jer">From the Crossing Tumbras, Midsayap North Cotabato</p>
+    <h2 class="ris">RISING FRONTEND DEVELOPER</h2>
+    <div class="me">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-tiktok'></i></a>
+        <a href="#"><i class='bx bxl-snapchat'></i></a>
+    </div>
+    <div class="tularan">
+    <img src="me.png">
+</div>
+</section>
+    <section class="about-parent" id="About">
+        <div class="about-content">
+            <img src="me2.png" class="father-pict">
+            <div class="about-title">
+                <h2><span style="color: #f9532d;">About</span> Me</h2>
+            </div>
+            <div class="letter">
+                
+                <p>Hi, I'm 19 years old, currently studying at Gani L. Abpi College Incorporated.
+                    I mostly like doing some crazy stuff, like playing online games Im so addicted with that and also to her.</p>
+            </div>
+
+        </div>
+
+    </section>
+    
+
+ <section class="service-parent" id="Service">
+        <div class="service-content">
+       
+            <div class="service-title">
+                <h2>My <span style="color:#f9532d;">Services</span> </h2>
+            </div>
+             
+             <div class="box">
+              <div class="card">
+                    <i class="fas fa-bars"></i>
+            <a href="#" class="icone"><i class='bx bx-edit-alt'></i></a>
+
+                    <h5>Graphic Designer</h5>
+                      <div class="web">
+                            <p>If its about designing my service is fit to your need, with beautiful and attractive output.</p>
+    
+                            <p style="text-align:center;">
+                                <a class="button"href="#">Read More</a> </p>
+                      </div>
+             </div>
+    
+             <div class="box">
+                <div class="card">
+                      <i class="fas fa-bars"></i>
+                      <a href="#"><i class='bx bx-network-chart'></i></a>
+                      <h5>Database Design</h5>
+                        <div class="web">
+                              <p>Well organized, you can found it easily. </p>
+      
+                              <p style="text-align:center;">
+                                  <a class="button"href="#">Read More</a> </p>
+                        </div>
+               </div>
+      
+               <div class="box">
+                <div class="card">
+                      <i class="fas fa-bars"></i>
+                      <a href="#"><i class='bx bxs-keyboard'></i></a>
+                      <h5>Encoder</h5>
+                        <div class="web">
+                              <p>I asure you that I can do my service encoder with 100% accurate and faster that you think.</p>
+      
+                              <p style="text-align:center;">
+                                  <a class="button"href="#">Read More</a> </p>
+                        </div>
+               </div>
+                
+                               
+                    
+                
+            
+        </div>
+    
+         
+   </section>
+
+ <section class="contact-parent" id="Contact">
+      <div class="contact-content">
+            <img  class="car-pict" src="map.png">
+          <div class="last">
+              <h3>Location!</h3>
+              <p>Crossing Tumbras, Midsayap North Cotabato</p>
+          </div>    
+      </div>
+
+      <div class="contact-content2">
+        <div class="form">
+           
+        </div>
+       </div>
+       
+       <div class="contact-content3">
+        <h2>If your interested just<br> message me.</h2>
+        <div class="oldtest">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-tiktok'></i></a>
+            <a href="#"><i class='bx bxl-snapchat'></i></a>
+        </div>
+        <p class="mess"> Message me for more Info.</p>
+        <input type="message" placeholder="Write messages..." required/>
+        <br>
+        <button class="sub">Submit</button>
+        <br>
+        <div class="for">
+          <a class="yes" href="#"><i class='bx bxl-google'></i></a>
+          <a class="gmail" href="#">johnali21rd@gmail.com</a>
+        </div>
+       </div>
+       <div class="end">
+        <p>C</p>
+        <p>O</p>
+        <p>N</p>
+        <p>T</p>
+        <p>A</p>
+        <p>C</p>
+        <p>T</p>
+       </div>
+
+  </section>
+</body>
+</html>
